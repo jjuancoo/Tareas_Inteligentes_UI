@@ -3,7 +3,7 @@ import React from 'react'
 const Sidebar = () => {
     return (
         <>
-            <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
+            <div class="flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
                 <div class="fixed flex flex-col top-0 left-0 w-64 bg-white h-full border-r">
                     <div class="overflow-y-auto overflow-x-hidden flex-grow">
                         <ul class="flex flex-col py-4 space-y-1">
