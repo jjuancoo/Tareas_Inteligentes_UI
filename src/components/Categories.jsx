@@ -6,32 +6,35 @@ const Categories = () => {
   return (
     <div className="p-4 sm:ml-64">
       <div className="p-4 rounded-lg">
-        <div class="grid grid-cols-4 gap-4 mb-4">
-          <div className="bg-gray-200 rounded-xl">
-            <Link className="flex justify-center items-center h-32 ">
-              <span className="material-symbols-rounded ">task</span>
-              <h1 className="">Tareas</h1>
+        <h1 className="py-3 px-1 text-2xl font-bold">Categorias</h1>
+        <div className="grid grid-cols-4 gap-4 mb-4">
+          <div className="bg-gray-200 rounded-xl hover:bg-gray-300">
+            <Link className="flex flex-col justify-center items-center h-32">
+              <span className="material-symbols-rounded mb-2">task</span>
+              <h1>Tareas</h1>
             </Link>
           </div>
 
-          <div className="bg-gray-200 rounded-xl">
-            <Link className="flex justify-center items-center h-32 ">
-              <span className="material-symbols-rounded ">workspaces</span>
-              <h1 className="">Workspaces</h1>
+          <div className="bg-gray-200 rounded-xl hover:bg-gray-300">
+            <Link className="flex flex-col justify-center items-center h-32">
+              <span className="material-symbols-rounded mb-2">workspaces</span>
+              <h1>Workspaces</h1>
             </Link>
           </div>
 
-          <div className="bg-gray-200 rounded-xl">
-            <Link className="flex justify-center items-center h-32 ">
-              <span className="material-symbols-rounded ">groups</span>
-              <h1 className="">Colaboradores</h1>
+          <div className="bg-gray-200 rounded-xl hover:bg-gray-300">
+            <Link className="flex flex-col justify-center items-center h-32">
+              <span className="material-symbols-rounded mb-2">groups</span>
+              <h1>Colaboradores</h1>
             </Link>
           </div>
 
-          <div className="bg-gray-200 rounded-xl">
-            <Link className="flex justify-center items-center h-32 ">
-              <span className="material-symbols-rounded ">calendar_month</span>
-              <h1 className="">Calendario </h1>
+          <div className="bg-gray-200 rounded-xl hover:bg-gray-300">
+            <Link className="flex flex-col justify-center items-center h-32">
+              <span className="material-symbols-rounded mb-2">
+                calendar_month
+              </span>
+              <h1>Calendario</h1>
             </Link>
           </div>
         </div>
