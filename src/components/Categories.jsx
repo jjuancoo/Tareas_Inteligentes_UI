@@ -4,7 +4,7 @@ import "material-symbols";
 
 const Categories = () => {
   return (
-    <div className="p-4 sm:ml-64">
+    <div>
       <div className="p-4 rounded-lg">
         <h1 className="py-3 px-1 text-2xl font-bold">Categorias</h1>
         <div className="grid grid-cols-4 gap-4 mb-4">
