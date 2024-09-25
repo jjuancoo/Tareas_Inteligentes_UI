@@ -1,8 +1,13 @@
 import React from "react";
 import NavBar from "../../components/auth/NavBar";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
+
+    const notify = () => toast("Aun no disponible")
+
   return (
     <>
       <NavBar />
@@ -52,7 +57,9 @@ const Login = () => {
             Continua con X
           </button>
 
-          <button className="w-full border border-gray-300 py-2 rounded-md flex items-center justify-center mb-3">
+          <button className="w-full border border-gray-300 py-2 rounded-md flex items-center justify-center mb-3"
+             onClick={notify}
+          >
             <img
               src="icons/facebook.svg"
               alt="Facebook Icon"

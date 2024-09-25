@@ -1,4 +1,5 @@
 import { Routes, Route} from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 
 import Home from './Pages/Home'
 import NotFound from './Pages/NotFound'
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
