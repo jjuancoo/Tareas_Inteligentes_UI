@@ -1,10 +1,11 @@
 import React from 'react'
+import "material-symbols";
 
 const NavBar = () => {
 
     return (
         <>
-            <nav class="bg-gray-800">
+            <nav class="bg-gray-100">
                 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -13,7 +14,7 @@ const NavBar = () => {
                             </div>
                             <div class="hidden sm:ml-6 sm:block">
                                 <div class="flex space-x-4">
-                                    <input type='text' className='p-2 rounded-xl bg-gray-300 w-64' placeholder='Buscar'/>
+                                    <input type='text' className='p-2 rounded-md bg-white w-64' placeholder='Buscar'/>
                                 </div>
                             </div>
                         </div>

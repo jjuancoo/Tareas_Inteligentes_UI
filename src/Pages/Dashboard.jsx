@@ -8,8 +8,8 @@ import WorkSpace from "../components/WorkSpace";
 const Dashboard = () => {
   return (
     <>
-      <NavBar />
       <Sidebar />
+      <NavBar />
       <div className="p-4 sm:ml-64">
         <Categories />
         <Task/>
