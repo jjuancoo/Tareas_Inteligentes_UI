@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import NotFound from './Pages/NotFound'
 import Dashboard from './Pages/Dashboard'
 import Login from './Pages/auth/Login'
+import Register from './Pages/auth/Register'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </>
