@@ -21,7 +21,7 @@ const Home = () => {
             <br /> tu equipo con Taski. Sin costos ocultos, sin límites.
           </p>
 
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-8 space-x-2">
             <Link
               to="/register"
               className="bg-gray-800 text-white py-2 px-6 rounded-lg hover:bg-gray-700 flex items-center transition hover:delay-150 duration-300 ease-in-out"
@@ -30,6 +30,12 @@ const Home = () => {
               <span className="material-symbols-rounded ml-2">
                 arrow_right_alt
               </span>
+            </Link>
+            <Link
+              to="/dashboard"
+              className="py-2 px-6 flex font-semibold items-center rounded-lg border border-gray-300 hover:bg-gray-100"
+            >
+              Ver demo
             </Link>
           </div>
         </div>
