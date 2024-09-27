@@ -53,7 +53,7 @@ const Login = () => {
               Continuar
             </button>
           </form>
-          <Link to="/register">¿No tienes una cuenta?</Link>
+          <Link to="/signup">¿No tienes una cuenta?</Link>
           <div className="flex items-center justify-between mb-6 mt-6">
             <div className="border-t border-gray-300 w-1/2"></div>
             <span className="text-gray-800 mx-3">O</span>

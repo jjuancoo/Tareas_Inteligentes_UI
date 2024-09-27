@@ -8,7 +8,7 @@ const NavBar = () => {
             <h1 className='font-bold text-2xl'>Taski</h1>
             <div className='space-x-4'>
                 <Link to='/login' className='font-semibold py-2 px-4 rounded-lg hover:bg-slate-200'>Iniciar Sesión</Link>
-                <Link className='bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-700'>Crear una cuenta</Link>
+                <Link to='/signup' className='bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-700'>Crear una cuenta</Link>
             </div>
         </nav>
     </>

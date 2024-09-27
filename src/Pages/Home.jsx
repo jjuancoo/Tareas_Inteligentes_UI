@@ -23,7 +23,7 @@ const Home = () => {
 
           <div className="flex justify-center mt-8 space-x-2">
             <Link
-              to="/register"
+              to="/signup"
               className="bg-gray-800 text-white py-2 px-6 rounded-lg hover:bg-gray-700 flex items-center transition hover:delay-150 duration-300 ease-in-out"
             >
               Comieza ahora
