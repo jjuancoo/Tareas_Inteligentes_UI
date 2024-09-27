@@ -1,12 +1,26 @@
 import React from "react";
 import NavBar from "../../components/auth/NavBar";
 import { Link } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
     const notify = () => toast("Aun no disponible")
+
+    //Definiendo la validacion
+    const {
+      register,
+      handleSubmit,
+      watch,
+      formState: { errors },
+      reset
+    } = useForm()
+
+    const onSubmit = (data) => {
+      console.log(data)
+    };
 
   return (
     <>
@@ -19,14 +33,21 @@ const Login = () => {
           <h1 className="text-gray-500 text-2xl font-semibold ">
             Inicia Sesión en Taski
           </h1>
-          <form className="mt-12 mb-4">
+          <form className="mt-12 mb-4" onSubmit={handleSubmit(onSubmit)}>
             <div className="space-y-2 mb-12 ">
-              <label className="font-semibold">Correo electronico*</label>
+              <label className="font-semibold" htmlFor="email">
+                Correo electronico*
+              </label>
               <input
                 type="email"
+                name="email"
                 className="w-full p-2 rounded-lg border"
                 placeholder="Ingresa tu correo electrónico"
+                {...register("email", { required: true })}
               />
+              {errors.email?.type === "required" && (
+                <p className="text-red-600 text-sm text-center">El correo es obligatorio</p>
+              )}
             </div>
             <button className="bg-purple-800 text-white w-full py-2 font-semibold rounded-lg hover:bg-purple-700">
               Continuar
@@ -57,8 +78,9 @@ const Login = () => {
             Continua con X
           </button>
 
-          <button className="w-full border border-gray-300 py-2 rounded-md flex items-center justify-center mb-3"
-             onClick={notify}
+          <button
+            className="w-full border border-gray-300 py-2 rounded-md flex items-center justify-center mb-3"
+            onClick={notify}
           >
             <img
               src="icons/facebook.svg"
