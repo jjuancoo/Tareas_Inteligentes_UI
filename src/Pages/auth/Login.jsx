@@ -45,13 +45,13 @@ const Login = () => {
                 placeholder="Ingresa tu correo electrónico"
                 {...register("email", { required: true })}
               />
-              {errors.email?.type === "required" && (
-                <p className="text-red-600 text-sm text-center">El correo es obligatorio</p>
-              )}
             </div>
-            <button className="bg-purple-800 text-white w-full py-2 font-semibold rounded-lg hover:bg-purple-700">
+            <button className="bg-purple-800 mb-2 text-white w-full py-2 font-semibold rounded-lg hover:bg-purple-700">
               Continuar
             </button>
+            {errors.email?.type === "required" && (
+                <p className="text-red-600 text-sm text-center">El correo es obligatorio</p>
+              )}
           </form>
           <Link to="/signup">¿No tienes una cuenta?</Link>
           <div className="flex items-center justify-between mb-6 mt-6">
