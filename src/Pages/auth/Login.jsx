@@ -53,7 +53,10 @@ const Login = () => {
                 <p className="text-red-600 text-sm text-center">El correo es obligatorio</p>
               )}
           </form>
-          <Link to="/signup">¿No tienes una cuenta?</Link>
+          <div className="flex flex-row justify-between">
+            <Link to="/signup">¿No tienes una cuenta?</Link>
+            <Link to="/reset-password">Olvide mi contraseña</Link>
+          </div>
           <div className="flex items-center justify-between mb-6 mt-6">
             <div className="border-t border-gray-300 w-1/2"></div>
             <span className="text-gray-800 mx-3">O</span>

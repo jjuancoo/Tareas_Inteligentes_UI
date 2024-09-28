@@ -6,6 +6,7 @@ import NotFound from './Pages/NotFound'
 import Dashboard from './Pages/Dashboard'
 import Login from './Pages/auth/Login'
 import Register from './Pages/auth/Register'
+import ForgotPassword from './Pages/auth/ForgotPassword'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Register/>}/>
+        <Route path='/reset-password' element={<ForgotPassword/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </>
