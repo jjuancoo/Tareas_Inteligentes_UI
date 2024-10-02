@@ -30,7 +30,7 @@ const Categories = () => {
           </div>
 
           <div className="bg-gray-200 rounded-xl hover:bg-gray-300">
-            <Link className="flex flex-col justify-center items-center h-32">
+            <Link to='/dashboard/calendar' className="flex flex-col justify-center items-center h-32">
               <span className="material-symbols-rounded mb-2">
                 calendar_month
               </span>
