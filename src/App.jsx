@@ -8,7 +8,7 @@ import Login from './Pages/auth/Login'
 import Register from './Pages/auth/Register'
 import ForgotPassword from './Pages/auth/ForgotPassword'
 import Notifications from './Pages/dashboard/Notifications'
-import Tasks from './components/Dashboard/Tasks'
+import Tasks from './Pages/dashboard/Tasks'
 import Calendar from './Pages/dashboard/Calendar'
 
 function App() {
