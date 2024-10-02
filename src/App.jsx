@@ -10,6 +10,8 @@ import ForgotPassword from './Pages/auth/ForgotPassword'
 import Notifications from './Pages/dashboard/Notifications'
 import Tasks from './Pages/dashboard/Tasks'
 import Calendar from './Pages/dashboard/Calendar'
+import Workspaces from './Pages/dashboard/Workspaces'
+
 
 function App() {
 
@@ -22,6 +24,7 @@ function App() {
         <Route path='/dashboard/notifications' element={<Notifications/>}/>
         <Route path='/dashboard/tasks' element={<Tasks/>}/>
         <Route path='/dashboard/calendar' element={<Calendar/>}/>
+        <Route path='/dashboard/workspaces' element={<Workspaces/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Register/>}/>
         <Route path='/reset-password' element={<ForgotPassword/>}/>

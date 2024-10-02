@@ -38,7 +38,7 @@ const Sidebar = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
+                                <Link to='/dashboard/workspaces' class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
                                     <span class="inline-flex justify-center items-center ml-4">
                                         <span class="material-symbols-rounded">
                                         workspaces
@@ -46,7 +46,7 @@ const Sidebar = () => {
                                     </span>
                                     <span class="ml-2 text-sm tracking-wide truncate">Mesas de Trabajo</span>
                                     <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 rounded-full">New</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
