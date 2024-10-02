@@ -8,6 +8,7 @@ import Login from './Pages/auth/Login'
 import Register from './Pages/auth/Register'
 import ForgotPassword from './Pages/auth/ForgotPassword'
 import Notifications from './Pages/dashboard/Notifications'
+import Tasks from './components/Dashboard/Tasks'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/dashboard/notifications' element={<Notifications/>}/>
+        <Route path='/dashboard/tasks' element={<Tasks/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Register/>}/>
         <Route path='/reset-password' element={<ForgotPassword/>}/>
