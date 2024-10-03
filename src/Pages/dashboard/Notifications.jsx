@@ -94,6 +94,33 @@ const Notifications = () => {
       notif.content.toLowerCase().includes(search.toLowerCase())
     );
 
+    const getIcon = (type) => {
+      switch (type) {
+        case "task":
+          return (
+            <span className="material-symbols-rounded text-green-500">
+              check_circle
+            </span>
+          );
+        case "alert":
+          return (
+            <span className="material-symbols-rounded text-red-500">error</span>
+          );
+        case "message":
+          return (
+            <span className="material-symbols-rounded text-blue-500">chat</span>
+          );
+        case "event":
+          return (
+            <span className="material-symbols-rounded text-purple-500">
+              event
+            </span>
+          );
+        default:
+          return null;
+      }
+    };
+    
   return (
     <>
       <Sidebar />
@@ -131,34 +158,37 @@ const Notifications = () => {
                 </select> */}
             </div>
 
-            <div className="h-96 overflow-y-auto border rounded-lg p-4">
+            <div className="h-96 overflow-y-auto border rounded-lg p-4" style={{ maxHeight: "400px" }}>
               {filteredNotifications.length > 0 ? (
-                filteredNotifications.map((notification, index) => (
-                  <div className="flex items-start space-x-4 space-y-2">
-                    <div className="flex-grow min-w-0">
-                      <p className="text-sm text-gray-800 dark:text-gray-200">
-                        {notification.content}
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                        {notification.time}
-                      </p>
+                filteredNotifications.map((notification) => (
+                  <div
+                    key={notification.id}
+                    className={`p-4 mb-4 flex justify-between items-center rounded-lg border ${
+                      !notification.read ? "bg-blue-50" : "bg-white"
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      {getIcon(notification.type)}
+                      <div className="ml-4">
+                        <h2 className="font-semibold">{notification.content}</h2>
+                        <p className="text-sm text-gray-500">{notification.time}</p>
+                      </div>
                     </div>
-                    <div className="flex-shrink-0 flex space-x-2">
+                    <div className="flex items-center">
                       {!notification.read && (
                         <button
-                          className="border py-1 px-2 rounded-lg hover:bg-gray-200"
                           onClick={() => markAsRead(notification.id)}
+                          className="mr-4 px-3 py-2 border bg-white rounded-lg"
                         >
-                          <span className="material-symbols-rounded mx-2">
-                            check
-                          </span>
+                          <span className="material-symbols-rounded mb-2 mx-2">check</span>
                           Marcar como leída
                         </button>
                       )}
                       <button
                         onClick={() => deleteNotification(notification.id)}
+                        className="text-gray-500 hover:text-red-500"
                       >
-                        <span className="material-symbols-rounded mx-2">delete</span>
+                        <span className="material-symbols-rounded">delete</span>
                       </button>
                     </div>
                   </div>
