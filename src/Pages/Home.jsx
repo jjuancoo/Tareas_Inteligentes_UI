@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom'
 import "material-symbols";
 import NavBar from '../components/Home/NavBar'
 import Footer from '../components/Home/Footer';
+import Characteristics from '../components/Home/Characteristics';
 
 const Home = () => {
   return (
     <>
+      <div className='min-h-screen bg-gradient-to-b from-blue-50 to-white '>
       <NavBar />
-      <div className="space-y-48">
+      <div className="space-y-48 ">
         <div className="py-8 mt-16 mb-16">
           <h1 className="text-6xl text-center font-bold">
             Tu espacio de trabajo colaborativo.
@@ -110,8 +112,10 @@ const Home = () => {
           </div>
         </div>
 
+        <Characteristics />
         <Footer/>
       </div>
+    </div>
     </>
   );
 }
