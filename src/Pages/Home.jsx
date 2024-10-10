@@ -4,6 +4,7 @@ import "material-symbols";
 import NavBar from '../components/Home/NavBar'
 import Footer from '../components/Home/Footer';
 import Characteristics from '../components/Home/Characteristics';
+import Start from '../components/Home/Start';
 
 const Home = () => {
   return (
@@ -113,6 +114,7 @@ const Home = () => {
         </div>
 
         <Characteristics />
+        <Start/>
         <Footer/>
       </div>
     </div>
